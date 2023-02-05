@@ -1,0 +1,35 @@
+GET http://localhost:3000/ HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/movie/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "神话",
+    "time": "2010",
+    "rating": "9"
+}
+
+
+### 
+GET http://localhost:3000/api/movies HTTP/1.1
+
+
+### 
+GET http://localhost:3000/api/movie/63def61474e4db458892818a HTTP/1.1
+
+
+### 
+DELETE http://localhost:3000/api/movie/63def61474e4db458892818a HTTP/1.1
+
+
+### 
+PUT http://localhost:3000/api/movie/63def61974e4db458892818e HTTP/1.1
+content-type: application/json
+
+{
+    "name": "醉拳",
+    "time": "2010",
+    "rating": "9"
+}
